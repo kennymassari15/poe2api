@@ -35,30 +35,55 @@
 
  :: Spring Boot ::                (v4.0.5)
 
-2026-03-31T07:05:59.434-05:00  INFO 2732 --- [           main] c.kmassari.poe2api.Poe2apiApplication    : Starting Poe2apiApplication using Java 21.0.8 with PID 2732 (C:\Users\hotle\poe2api\backend\target\classes started by hotle in C:\Users\hotle\poe2api\backend)
-2026-03-31T07:05:59.440-05:00  INFO 2732 --- [           main] c.kmassari.poe2api.Poe2apiApplication    : No active profile set, falling back to 1 default profile: "default"
-2026-03-31T07:05:59.441-05:00 DEBUG 2732 --- [           main] o.s.boot.SpringApplication               : Loading source class com.kmassari.poe2api.Poe2apiApplication
-2026-03-31T07:05:59.474-05:00 DEBUG 2732 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@5be46f9d
-2026-03-31T07:06:00.056-05:00 DEBUG 2732 --- [           main] o.s.b.t.s.TomcatServletWebServerFactory  : Code archive: C:\Users\hotle\.m2\repository\org\springframework\boot\spring-boot-web-server\4.0.5\spring-boot-web-server-4.0.5.jar
-2026-03-31T07:06:00.056-05:00 DEBUG 2732 --- [           main] o.s.b.t.s.TomcatServletWebServerFactory  : Code archive: C:\Users\hotle\.m2\repository\org\springframework\boot\spring-boot-web-server\4.0.5\spring-boot-web-server-4.0.5.jar
-2026-03-31T07:06:00.057-05:00 DEBUG 2732 --- [           main] o.s.b.t.s.TomcatServletWebServerFactory  : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-2026-03-31T07:06:00.082-05:00  INFO 2732 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-03-31T07:06:00.096-05:00  INFO 2732 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-31T07:06:00.096-05:00  INFO 2732 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-03-31T07:06:00.167-05:00 DEBUG 2732 --- [           main] b.w.c.s.WebApplicationContextInitializer : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2026-03-31T07:06:00.168-05:00  INFO 2732 --- [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 693 ms
-2026-03-31T07:06:00.176-05:00 DEBUG 2732 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-2026-03-31T07:06:00.178-05:00 DEBUG 2732 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
-2026-03-31T07:06:00.195-05:00 DEBUG 2732 --- [           main] o.s.b.s.f.OrderedRequestContextFilter    : Filter 'requestContextFilter' configured for use
-2026-03-31T07:06:00.196-05:00 DEBUG 2732 --- [           main] o.s.b.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
-2026-03-31T07:06:00.196-05:00 DEBUG 2732 --- [           main] o.s.b.s.filter.OrderedFormContentFilter  : Filter 'formContentFilter' configured for use
-2026-03-31T07:06:00.266-05:00 DEBUG 2732 --- [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.kmassari.poe2api'. Automatic @Repository and @Entity scanning is enabled.
-2026-03-31T07:06:00.310-05:00 DEBUG 2732 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2026-03-31T07:06:00.327-05:00 DEBUG 2732 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2026-03-31T07:06:00.346-05:00 DEBUG 2732 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-03-31T07:06:00.372-05:00 DEBUG 2732 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-03-31T07:06:00.414-05:00  WARN 2732 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2026-03-31T07:06:00.433-05:00 DEBUG 2732 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-03-31T08:25:37.970-05:00  INFO 10740 --- [           main] c.kmassari.poe2api.Poe2ApiApplication    : Starting Poe2ApiApplication using Java 21.0.8 with PID 10740 (C:\Users\hotle\poe2api\backend\target\classes started by hotle in C:\Users\hotle\poe2api\backend)
+2026-03-31T08:25:37.974-05:00  INFO 10740 --- [           main] c.kmassari.poe2api.Poe2ApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-03-31T08:25:37.975-05:00 DEBUG 10740 --- [           main] o.s.boot.SpringApplication               : Loading source class com.kmassari.poe2api.Poe2ApiApplication
+2026-03-31T08:25:38.008-05:00 DEBUG 10740 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a220c9a
+2026-03-31T08:25:38.414-05:00  INFO 10740 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31T08:25:38.431-05:00 DEBUG 10740 --- [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.kmassari.poe2api'. Automatic @Repository and @Entity scanning is enabled.
+2026-03-31T08:25:38.454-05:00  INFO 10740 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2026-03-31T08:25:38.814-05:00 DEBUG 10740 --- [           main] o.s.b.t.s.TomcatServletWebServerFactory  : Code archive: C:\Users\hotle\.m2\repository\org\springframework\boot\spring-boot-web-server\4.0.5\spring-boot-web-server-4.0.5.jar
+2026-03-31T08:25:38.815-05:00 DEBUG 10740 --- [           main] o.s.b.t.s.TomcatServletWebServerFactory  : Code archive: C:\Users\hotle\.m2\repository\org\springframework\boot\spring-boot-web-server\4.0.5\spring-boot-web-server-4.0.5.jar
+2026-03-31T08:25:38.815-05:00 DEBUG 10740 --- [           main] o.s.b.t.s.TomcatServletWebServerFactory  : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2026-03-31T08:25:38.833-05:00  INFO 10740 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-03-31T08:25:38.844-05:00  INFO 10740 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-31T08:25:38.845-05:00  INFO 10740 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-03-31T08:25:38.892-05:00 DEBUG 10740 --- [           main] b.w.c.s.WebApplicationContextInitializer : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2026-03-31T08:25:38.894-05:00  INFO 10740 --- [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 885 ms
+2026-03-31T08:25:38.907-05:00 DEBUG 10740 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2026-03-31T08:25:38.908-05:00 DEBUG 10740 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2026-03-31T08:25:38.924-05:00 DEBUG 10740 --- [           main] o.s.b.s.f.OrderedRequestContextFilter    : Filter 'requestContextFilter' configured for use
+2026-03-31T08:25:38.926-05:00 DEBUG 10740 --- [           main] o.s.b.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2026-03-31T08:25:38.926-05:00 DEBUG 10740 --- [           main] o.s.b.s.filter.OrderedFormContentFilter  : Filter 'formContentFilter' configured for use
+2026-03-31T08:25:39.022-05:00  INFO 10740 --- [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-31T08:25:39.062-05:00  INFO 10740 --- [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-03-31T08:25:39.431-05:00  INFO 10740 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31T08:25:39.459-05:00  INFO 10740 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-31T08:25:39.597-05:00  INFO 10740 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:poe2db user=SA
+2026-03-31T08:25:39.601-05:00  INFO 10740 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-31T08:25:39.653-05:00  INFO 10740 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:poe2db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: POE2DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31T08:25:40.329-05:00  INFO 10740 --- [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31T08:25:40.387-05:00 DEBUG 10740 --- [           main] org.hibernate.SQL                        : create table characters (id bigint generated by default as identity, ascendancy1 varchar(255), ascendancy2 varchar(255), ascendancy3 varchar(255), image varchar(255), name varchar(255), primary key (id))
+2026-03-31T08:25:40.396-05:00  INFO 10740 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31T08:25:40.494-05:00  INFO 10740 --- [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-31T08:25:40.626-05:00  WARN 10740 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31T08:25:40.831-05:00 DEBUG 10740 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2026-03-31T08:25:40.858-05:00 DEBUG 10740 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-03-31T08:25:40.884-05:00 DEBUG 10740 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-03-31T08:25:40.934-05:00 DEBUG 10740 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-03-31T08:25:41.014-05:00  INFO 10740 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 50718 (http) with context path '/'
+2026-03-31T08:25:41.021-05:00 DEBUG 10740 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 
 ============================
@@ -81,8 +106,40 @@ Positive matches:
    ApplicationAvailabilityAutoConfiguration#applicationAvailability matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.availability.ApplicationAvailability; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
+   DataJpaRepositoriesAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+      - @ConditionalOnBooleanProperty (spring.data.jpa.repositories.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) found bean 'dataSource'; @ConditionalOnMissingBean (types: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) did not find property 'spring.datasource.type' (DataSourceAutoConfiguration.PooledDataSourceCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration#jdbcConnectionDetails matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.jdbc.autoconfigure.JdbcConnectionDetails; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+      - @ConditionalOnProperty (spring.datasource.type=com.zaxxer.hikari.HikariDataSource) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceInitializationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jdbc.datasource.init.DatabasePopulator' (OnClassCondition)
+      - SQL InitializationDatabase Initialization default value is EMBEDDED (OnSqlInitializationCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource'; @ConditionalOnMissingBean (types: org.springframework.boot.sql.autoconfigure.init.ApplicationScriptDatabaseInitializer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.HikariPoolDataSourceMetadataProviderConfiguration matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+
    DataSourceTransactionManagerAutoConfiguration matched:
       - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.TransactionManager' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
 
    DataWebAutoConfiguration matched:
       - @ConditionalOnClass found required classes 'org.springframework.data.web.PageableHandlerMethodArgumentResolver', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
@@ -136,6 +193,12 @@ Positive matches:
    ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#defaultErrorView matched:
       - @ConditionalOnMissingBean (names: error; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
+   HibernateJpaAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean', 'jakarta.persistence.EntityManager', 'org.hibernate.engine.spi.SessionImplementor' (OnClassCondition)
+
+   HibernateJpaConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
    HttpEncodingAutoConfiguration matched:
       - @ConditionalOnClass found required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
       - found 'session' scope (OnWebApplicationCondition)
@@ -171,6 +234,40 @@ Positive matches:
    JacksonHttpMessageConvertersConfiguration.JacksonJsonHttpMessageConverterConfiguration#jacksonJsonHttpMessageConvertersCustomizer matched:
       - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.JacksonJsonHttpMessageConverter ignored: org.springframework.hateoas.server.mvc.TypeConstrainedJacksonJsonHttpMessageConverter,org.springframework.data.rest.webmvc.alps.AlpsJacksonJsonHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
+   JdbcClientAutoConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate; SearchStrategy: all) found a single bean 'namedParameterJdbcTemplate'; @ConditionalOnMissingBean (types: org.springframework.jdbc.core.simple.JdbcClient; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JdbcTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   JdbcTemplateConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jdbc.core.JdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#entityManagerFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean,jakarta.persistence.EntityManagerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#entityManagerFactoryBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.jpa.EntityManagerFactoryBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#jpaVendorAdapter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.JpaVendorAdapter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#transactionManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration.JpaWebConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBooleanProperty (spring.jpa.open-in-view=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor,org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration.PersistenceManagedTypesConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean,jakarta.persistence.EntityManagerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration.PersistenceManagedTypesConfiguration#persistenceManagedTypes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.persistenceunit.PersistenceManagedTypes; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
    JtaAutoConfiguration matched:
       - @ConditionalOnClass found required class 'jakarta.transaction.Transaction' (OnClassCondition)
       - @ConditionalOnBooleanProperty (spring.jta.enabled=true) matched (OnPropertyCondition)
@@ -188,6 +285,9 @@ Positive matches:
 
    MultipartAutoConfiguration#multipartResolver matched:
       - @ConditionalOnMissingBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NamedParameterJdbcTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.jdbc.core.JdbcTemplate; SearchStrategy: all) found a single bean 'jdbcTemplate'; @ConditionalOnMissingBean (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    PersistenceExceptionTranslationAutoConfiguration matched:
       - @ConditionalOnClass found required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
@@ -247,6 +347,18 @@ Positive matches:
    TransactionAutoConfiguration matched:
       - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
 
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found bean 'transactionManager'; @ConditionalOnMissingBean (types: org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) found a single bean 'transactionManager' (OnBeanCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration#transactionTemplate matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.support.TransactionOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
    TransactionManagerCustomizationAutoConfiguration matched:
       - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
 
@@ -292,35 +404,65 @@ Negative matches:
       Did not match:
          - @ConditionalOnMissingClass found unwanted class 'org.aspectj.weaver.Advice' (OnClassCondition)
 
-   DataJpaRepositoriesAutoConfiguration:
+   DataJpaRepositoriesAutoConfiguration#entityManagerFactoryBootstrapExecutorCustomizer:
       Did not match:
-         - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans of type javax.sql.DataSource (OnBeanCondition)
-      Matched:
-         - @ConditionalOnClass found required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
-         - @ConditionalOnBooleanProperty (spring.data.jpa.repositories.enabled=true) matched (OnPropertyCondition)
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on DataJpaRepositoriesAutoConfiguration.BootstrapExecutorCondition.LazyBootstrapMode @ConditionalOnProperty (spring.data.jpa.repositories.bootstrap-mode=lazy) did not find property 'spring.data.jpa.repositories.bootstrap-mode'; NestedCondition on DataJpaRepositoriesAutoConfiguration.BootstrapExecutorCondition.DeferredBootstrapMode @ConditionalOnProperty (spring.data.jpa.repositories.bootstrap-mode=deferred) did not find property 'spring.data.jpa.repositories.bootstrap-mode' (DataJpaRepositoriesAutoConfiguration.BootstrapExecutorCondition)
 
    DataRepositoryMetricsAutoConfiguration:
       Did not match:
          - @ConditionalOnBean did not find required type 'io.micrometer.core.instrument.MeterRegistry' (OnBeanCondition)
 
+   DataSourceAutoConfiguration.EmbeddedDatabaseConfiguration:
+      Did not match:
+         - EmbeddedDataSource spring.datasource.url is set (DataSourceAutoConfiguration.EmbeddedDatabaseCondition)
+
+   DataSourceCheckpointRestoreConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.crac.Resource' (OnClassCondition)
+
+   DataSourceConfiguration.Dbcp2:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourceConfiguration.Generic:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.type) did not find property 'spring.datasource.type' (OnPropertyCondition)
+
+   DataSourceConfiguration.OracleUcp:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSourceImpl', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourceConfiguration.Tomcat:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
    DataSourceHealthContributorAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.boot.health.autoconfigure.contributor.ConditionalOnEnabledHealthIndicator' (OnClassCondition)
 
-   DataSourceInitializationAutoConfiguration:
+   DataSourceJmxConfiguration:
       Did not match:
-         - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
-      Matched:
-         - @ConditionalOnClass found required class 'org.springframework.jdbc.datasource.init.DatabasePopulator' (OnClassCondition)
-         - SQL InitializationDatabase Initialization default value is EMBEDDED (OnSqlInitializationCondition)
+         - @ConditionalOnBooleanProperty (spring.jmx.enabled=true) did not find property 'spring.jmx.enabled' (OnPropertyCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.CommonsDbcp2PoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.OracleUcpPoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSource', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.TomcatDataSourcePoolMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
 
    DataSourcePoolMetricsAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'io.micrometer.core.instrument.MeterRegistry' (OnClassCondition)
 
-   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration:
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration#transactionManager:
       Did not match:
-         - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+         - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found beans of type 'org.springframework.transaction.TransactionManager' transactionManager (OnBeanCondition)
 
    DispatcherServletAutoConfiguration.DispatcherServletConfiguration#multipartResolver:
       Did not match:
@@ -353,16 +495,6 @@ Negative matches:
    JacksonHttpMessageConvertersConfiguration.JacksonXmlHttpMessageConverterConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'tools.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
-
-   JdbcClientAutoConfiguration:
-      Did not match:
-         - @ConditionalOnSingleCandidate (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
-
-   JdbcTemplateAutoConfiguration:
-      Did not match:
-         - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
-      Matched:
-         - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
 
    JmxAutoConfiguration:
       Did not match:
@@ -478,24 +610,9 @@ Negative matches:
       Did not match:
          - @ConditionalOnBean (types: org.springframework.transaction.aspectj.AbstractTransactionAspect; SearchStrategy: all) did not find any beans of type org.springframework.transaction.aspectj.AbstractTransactionAspect (OnBeanCondition)
 
-   TransactionAutoConfiguration.EnableTransactionManagementConfiguration:
-      Did not match:
-         - @ConditionalOnBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) did not find any beans of type org.springframework.transaction.TransactionManager (OnBeanCondition)
-
-   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration:
-      Did not match:
-         - Ancestor org.springframework.boot.transaction.autoconfigure.TransactionAutoConfiguration$EnableTransactionManagementConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
-      Matched:
-         - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
-
    TransactionAutoConfiguration.EnableTransactionManagementConfiguration.JdkDynamicAutoProxyConfiguration:
       Did not match:
          - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=false) did not find property 'spring.aop.proxy-target-class' (OnPropertyCondition)
-         - Ancestor org.springframework.boot.transaction.autoconfigure.TransactionAutoConfiguration$EnableTransactionManagementConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
-
-   TransactionAutoConfiguration.TransactionTemplateConfiguration:
-      Did not match:
-         - @ConditionalOnSingleCandidate (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    WebMvcAutoConfiguration#hiddenHttpMethodFilter:
       Did not match:
@@ -535,9 +652,7 @@ Negative matches:
 Exclusions:
 -----------
 
-    org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration
-
-    org.springframework.boot.hibernate.autoconfigure.HibernateJpaAutoConfiguration
+    None
 
 
 Unconditional classes:
@@ -557,78 +672,6 @@ Unconditional classes:
 
 
 
-2026-03-31T07:06:00.445-05:00 DEBUG 2732 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : Application failed to start due to an exception
-
-org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-	at org.springframework.boot.web.server.PortInUseException.lambda$throwIfPortBindingException$0(PortInUseException.java:73) ~[spring-boot-web-server-4.0.5.jar:4.0.5]
-	at org.springframework.boot.web.server.PortInUseException.lambda$ifPortBindingException$0(PortInUseException.java:89) ~[spring-boot-web-server-4.0.5.jar:4.0.5]
-	at org.springframework.boot.web.server.PortInUseException.ifCausedBy(PortInUseException.java:107) ~[spring-boot-web-server-4.0.5.jar:4.0.5]
-	at org.springframework.boot.web.server.PortInUseException.ifPortBindingException(PortInUseException.java:85) ~[spring-boot-web-server-4.0.5.jar:4.0.5]
-	at org.springframework.boot.web.server.PortInUseException.throwIfPortBindingException(PortInUseException.java:72) ~[spring-boot-web-server-4.0.5.jar:4.0.5]
-	at org.springframework.boot.tomcat.TomcatWebServer.start(TomcatWebServer.java:247) ~[spring-boot-tomcat-4.0.5.jar:4.0.5]
-	at org.springframework.boot.web.server.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-web-server-4.0.5.jar:4.0.5]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:420) ~[spring-context-7.0.6.jar:7.0.6]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:409) ~[spring-context-7.0.6.jar:7.0.6]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:613) ~[spring-context-7.0.6.jar:7.0.6]
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:379) ~[spring-context-7.0.6.jar:7.0.6]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:306) ~[spring-context-7.0.6.jar:7.0.6]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1013) ~[spring-context-7.0.6.jar:7.0.6]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-7.0.6.jar:7.0.6]
-	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.5.jar:4.0.5]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.5.jar:4.0.5]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.5.jar:4.0.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.5.jar:4.0.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.5.jar:4.0.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.5.jar:4.0.5]
-	at com.kmassari.poe2api.Poe2apiApplication.main(Poe2apiApplication.java:9) ~[classes/:na]
-Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:220) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
-	at org.springframework.boot.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:307) ~[spring-boot-tomcat-4.0.5.jar:4.0.5]
-	at org.springframework.boot.tomcat.TomcatWebServer.start(TomcatWebServer.java:233) ~[spring-boot-tomcat-4.0.5.jar:4.0.5]
-	... 16 common frames omitted
-Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1119) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:217) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
-	... 18 common frames omitted
-Caused by: java.net.BindException: Address already in use: bind
-	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
-	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:265) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:220) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
-	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1640) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1723) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:644) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1116) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
-	... 20 common frames omitted
-
-2026-03-31T07:06:00.450-05:00 ERROR 2732 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.327 s
-[INFO] Finished at: 2026-03-31T07:06:00-05:00
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.5:run (default-cli) on project poe2api: Process terminated with exit code: 1 -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+2026-03-31T08:25:41.024-05:00  INFO 10740 --- [           main] c.kmassari.poe2api.Poe2ApiApplication    : Started Poe2ApiApplication in 3.4 seconds (process running for 3.706)
+2026-03-31T08:25:41.026-05:00 DEBUG 10740 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2026-03-31T08:25:41.029-05:00 DEBUG 10740 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC

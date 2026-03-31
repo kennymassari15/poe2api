@@ -1,1 +1,4 @@
-com\kmassari\poe2api\Poe2apiApplication.class
+com\kmassari\poe2_api\Character.class
+com\kmassari\poe2_api\Poe2ApiApplication.class
+com\kmassari\poe2_api\controller\CharacterController.class
+com\kmassari\poe2_api\repository\CharacterRepository.class
