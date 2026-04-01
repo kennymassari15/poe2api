@@ -4,7 +4,7 @@
   "scripts": {
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "start:frontend": "npm --prefix frontend start",
-    "start:backend": "cd backend/poe2-api && mvnw.cmd spring-boot:run"
+    "start:backend": "cd backend && mvnw.cmd spring-boot:run"
   },
   "devDependencies": {
     "concurrently": "^9.0.1"
