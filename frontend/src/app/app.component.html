@@ -1,0 +1,83 @@
+<div class="app-shell">
+  <div class="app-header">
+    <h1 class="app-title">POE2 API</h1>
+    <a
+      class="swagger-link-button"
+      href="http://localhost:8080/swagger-ui.html"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Swagger
+    </a>
+  </div>
+
+  <p class="status-card status-card-error" *ngIf="!isLoading && errorMessage">
+    {{ errorMessage }}
+  </p>
+
+  <p class="status-card" *ngIf="!isLoading && !errorMessage && !characters.length">
+    No characters were returned by the API.
+  </p>
+
+  <div class="character-grid" *ngIf="characters.length">
+    <article class="character-card" *ngFor="let character of characters; trackBy: trackByCharacterId">
+      <img class="character-image" [src]="character.image" [alt]="character.name">
+      <div class="character-details">
+        <h2 class="character-name">{{ character.name }}</h2>
+        <div class="character-tags">
+          <span
+            class="tag ascension{{ index + 1 }}"
+            *ngFor="let ascendancy of getAscendancies(character); let index = index"
+          >
+            {{ ascendancy }}
+          </span>
+        </div>
+        <div class="character-footer">
+          <button class="view-button" type="button" (click)="toggleCharacter(character.id)">View</button>
+          <span class="character-id">#{{ character.id }}</span>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="character-modal-backdrop" *ngIf="selectedCharacter as character" (click)="closeModal()">
+    <section
+      class="character-modal"
+      aria-modal="true"
+      role="dialog"
+      (click)="$event.stopPropagation()"
+    >
+      <div class="character-modal-header">
+        <div>
+          <h2 class="character-modal-title">{{ character.name }}</h2>
+          <p class="character-modal-endpoint">GET /api/characters/{{ character.id }}</p>
+        </div>
+        <button
+          class="character-modal-close"
+          type="button"
+          aria-label="Close character details"
+          (click)="closeModal()"
+        >
+          x
+        </button>
+      </div>
+
+      <div class="character-modal-content">
+        <img class="character-modal-image" [src]="character.image" [alt]="character.name">
+        <div class="character-tags character-modal-tags">
+          <span
+            class="tag ascension{{ index + 1 }}"
+            *ngFor="let ascendancy of getAscendancies(character); let index = index"
+          >
+            {{ ascendancy }}
+          </span>
+        </div>
+      </div>
+
+      <div class="character-modal-response">
+        <p class="character-modal-label">API response</p>
+        <pre>{{ character | json }}</pre>
+      </div>
+    </section>
+  </div>
+</div>
