@@ -4,7 +4,7 @@
   "scripts": {
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "start:frontend": "npm --prefix frontend start",
-    "start:backend": "cd backend && mvnw.cmd spring-boot:run"
+    "start:backend": "powershell -NoProfile -Command \"$env:JAVA_HOME='C:\\Users\\hotle\\.jdk\\jdk-21.0.8'; $env:Path='C:\\Users\\hotle\\.jdk\\jdk-21.0.8\\bin;' + $env:Path; Set-Location 'backend'; .\\mvnw.cmd spring-boot:run\""
   },
   "devDependencies": {
     "concurrently": "^9.0.1"
