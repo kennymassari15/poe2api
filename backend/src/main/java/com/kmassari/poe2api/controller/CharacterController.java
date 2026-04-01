@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.kmassari.poe2api.Character;
 import com.kmassari.poe2api.repository.CharacterRepository;
 
+import io.swagger.v3.oas.annotations.Hidden;
+
 @RestController
 @RequestMapping("/api/characters")
 @CrossOrigin(origins = {"http://localhost:4200"})
@@ -55,6 +57,7 @@ public class CharacterController {
             .orElse(ResponseEntity.notFound().build());
     }
 
+    @Hidden
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         if (!repo.existsById(id)) {
