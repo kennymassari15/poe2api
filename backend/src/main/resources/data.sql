@@ -21,3 +21,5 @@ INSERT INTO characters (id, name, ascendancy1, ascendancy2, ascendancy3, image) 
 	(10, 'Asala', 'NPC', 'N/A', 'N/A', '/image/asala.jpg'),
 	(11, 'Alva', 'NPC', 'N/A', 'N/A', '/image/alva.jpg'),
 	(12, 'Trial Master', 'NPC', 'N/A', 'N/A', '/image/trialmaster.jpg');
+
+ALTER TABLE characters ALTER COLUMN id RESTART WITH 13;
