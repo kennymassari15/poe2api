@@ -15,11 +15,11 @@ INSERT INTO characters (id, name, ascendancy1, ascendancy2, ascendancy3, image) 
 	(4, 'Witch', 'Blood Mage', 'Infernalist', 'Lich', '/image/witch.jpg'),
 	(5, 'Mercenary', 'Witch Hunter', 'Gemling Legionnaire', 'Tactician', '/image/merc.jpg'),
 	(6, 'Monk', 'Invoker', 'Acolyte of Chayula', 'N/A', '/image/monk.jpg'),
-	(7, 'Huntress', 'Ritualist', 'Amazon', 'N/A', '/image/huntress.jpg'),
-	(8, 'Druid', 'Oracle', 'Shaman', 'N/A', '/image/druid.jpg'),
-	(9, 'Doryani', 'NPC', 'N/A', 'N/A', '/image/doryani.jpg'),
+	(7, 'Huntress', 'Ritualist', 'Amazon', 'N/A', '/image/huntress.png'),
+	(8, 'Druid', 'Oracle', 'Shaman', 'N/A', '/image/druid.jpeg'),
+	(9, 'Barron', 'NPC', 'N/A', 'N/A', '/image/barron.jpg'),
 	(10, 'Asala', 'NPC', 'N/A', 'N/A', '/image/asala.jpg'),
-	(11, 'Alva', 'NPC', 'N/A', 'N/A', '/image/alva.jpg'),
-	(12, 'Trial Master', 'NPC', 'N/A', 'N/A', '/image/trialmaster.jpg');
+	(11, 'Maraketh Lieutenant', 'NPC', 'N/A', 'N/A', '/image/marakethlieutenant.jpg'),
+	(12, 'Perrenial King', 'NPC', 'N/A', 'N/A', '/image/perrenialking.jpg');
 
 ALTER TABLE characters ALTER COLUMN id RESTART WITH 13;
