@@ -18,8 +18,7 @@ The backend starts on `http://localhost:8080`.
 
 ## CI
 
-- A GitHub Actions workflow exists at `backend/.github/workflows/java-ci.yml`.
-- It runs on Java 21 with `./mvnw clean test` (in `backend`).
+GitHub Actions runs backend CI on pushes and pull requests to `main`. See `backend/.github/workflows/java-ci.yml` for the exact steps and Java version.
 
 # POE2 API Frontend
 
