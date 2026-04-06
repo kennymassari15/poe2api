@@ -3,7 +3,7 @@
 ## Java Requirement
 
 - Runtime/JDK: Java 21
-- Build: Maven wrapper via `.\mvnw spring-boot:run`
+- Build: Maven wrapper via `.\mvnw.cmd clean package`
 
 ## Start the backend
 
