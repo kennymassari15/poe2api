@@ -16,9 +16,17 @@ This frontend is an Angular application for the POE2 API project.
 
 ## Run the app
 
-From the `frontend` directory:
+From the repo root:
 
 ```powershell
+npm install
+npm start
+```
+
+The root install now also installs the frontend dependencies automatically. If you only want to work on the Angular app directly, you can still run:
+
+```powershell
+cd frontend
 npm install
 npm start
 ```
