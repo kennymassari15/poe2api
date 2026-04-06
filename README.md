@@ -3,7 +3,17 @@
 ## Java Requirement
 
 - Runtime/JDK: Java 21
-- Build: Maven wrapper via `backend/mvnw`
+- Build: Maven wrapper via `.\mvnw spring-boot:run`
+
+## Start the backend
+
+From the `backend` directory, run:
+
+```powershell
+.\mvnw.cmd spring-boot:run
+```
+
+The backend starts on `http://localhost:8080`.
 
 ## CI
 
@@ -14,20 +24,11 @@
 
 This frontend is an Angular application for the POE2 API project.
 
-## Run the app
+## Start the frontend
 
-From the repo root:
-
-```powershell
-npm install
-npm start
-```
-
-The root install now also installs the frontend dependencies automatically. If you only want to work on the Angular app directly, you can still run:
+From the `frontend` directory, run:
 
 ```powershell
-cd frontend
-npm install
 npm start
 ```
 
@@ -37,7 +38,7 @@ The Angular dev server runs on `http://localhost:4200`.
 
 This frontend expects the Spring Boot backend to be running on `http://localhost:8080`.
 
-During development, Angular proxies API requests through [proxy.config.json](/C:/Users/hotle/poe2-project/frontend/proxy.config.json), so the app uses `/api/characters` instead of a hardcoded backend URL.
+During development, Angular proxies API requests through `frontend/proxy.config.json`, so the app uses `/api/characters` instead of a hardcoded backend URL.
 
 ## Build
 
