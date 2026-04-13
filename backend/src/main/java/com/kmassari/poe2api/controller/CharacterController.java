@@ -15,55 +15,44 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.kmassari.poe2api.Character;
-import com.kmassari.poe2api.repository.CharacterRepository;
-
+import com.kmassari.poe2api.service.CharacterService;
 
 @RestController
 @RequestMapping("/api/characters")
 @CrossOrigin(origins = {"http://localhost:4200"})
 public class CharacterController {
 
-    private final CharacterRepository repo;
+    private final CharacterService characterService;
 
-    public CharacterController(CharacterRepository repo) {
-        this.repo = repo;
+    public CharacterController(CharacterService characterService) {
+        this.characterService = characterService;
     }
+
 
     @GetMapping
     public List<Character> getAll() {
-        return repo.findAll();
+        return characterService.getAll();
     }
 
     @PostMapping
     public ResponseEntity<Character> create(@RequestBody Character character) {
         character.setId(null);
-        Character saved = repo.save(character);
+        Character saved = characterService.create(character);
         return ResponseEntity.status(HttpStatus.CREATED).body(saved);
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<Character> update(@PathVariable Long id, @RequestBody Character updatedCharacter) {
-        return repo.findById(id)
-            .map(character -> {
-                character.setName(updatedCharacter.getName());
-                character.setImage(updatedCharacter.getImage());
-                character.setAscendancy1(updatedCharacter.getAscendancy1());
-                character.setAscendancy2(updatedCharacter.getAscendancy2());
-                character.setAscendancy3(updatedCharacter.getAscendancy3());
-
-                Character saved = repo.save(character);
-                return ResponseEntity.ok(saved);
-            })
+        return characterService.update(id, updatedCharacter)
+            .map(ResponseEntity::ok)
             .orElse(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
-        if (!repo.existsById(id)) {
+        if (!characterService.delete(id)) {
             return ResponseEntity.notFound().build();
         }
-
-        repo.deleteById(id);
         return ResponseEntity.noContent().build();
     }
 }
