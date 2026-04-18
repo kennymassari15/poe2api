@@ -29,6 +29,10 @@ export class AppComponent implements OnInit {
   isLoading = true;
   errorMessage = "";
 
+  get selectedCharacter(): Character | null {
+    return this.characters.find((character) => character.id === this.openId) ?? null;
+  }
+
   ngOnInit(): void {
     this.http
       .get<Character[]>(`${environment.apiBaseUrl}/api/characters`)
