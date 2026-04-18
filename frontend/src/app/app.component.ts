@@ -23,6 +23,7 @@ interface Character {
 export class AppComponent implements OnInit {
   private readonly http = inject(HttpClient);
   private readonly maxStartupRetries = 15;
+  readonly swaggerUrl = `${environment.apiBaseUrl}/swagger-ui.html`;
 
   characters: Character[] = [];
   openId: number | null = null;
