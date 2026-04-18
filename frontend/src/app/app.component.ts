@@ -2,6 +2,7 @@ import { CommonModule } from "@angular/common";
 import { HttpClient } from "@angular/common/http";
 import { Component, OnInit, inject } from "@angular/core";
 import { catchError, finalize, of, retry, timer } from "rxjs";
+import { environment } from "../environments/environment";
 
 interface Character {
   id: number;
@@ -28,13 +29,9 @@ export class AppComponent implements OnInit {
   isLoading = true;
   errorMessage = "";
 
-  get selectedCharacter(): Character | null {
-    return this.characters.find((character) => character.id === this.openId) ?? null;
-  }
-
   ngOnInit(): void {
     this.http
-      .get<Character[]>("/api/characters")
+      .get<Character[]>(`${environment.apiBaseUrl}/api/characters`)
       .pipe(
         retry({
           count: this.maxStartupRetries,

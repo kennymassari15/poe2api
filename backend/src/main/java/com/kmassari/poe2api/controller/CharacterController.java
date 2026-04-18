@@ -19,7 +19,7 @@ import com.kmassari.poe2api.service.CharacterService;
 
 @RestController
 @RequestMapping("/api/characters")
-@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin(origins = {"http://localhost:4200", "https://mango-coast-030c64b10.7.azurestaticapps.net"})
 public class CharacterController {
 
     private final CharacterService characterService;
