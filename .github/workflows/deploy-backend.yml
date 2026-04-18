@@ -21,6 +21,12 @@ jobs:
           distribution: temurin
           java-version: '25'
 
+      - name: Prepare Maven wrapper
+        working-directory: backend
+        run: |
+          sed -i 's/\r$//' mvnw
+          chmod +x mvnw
+
       - name: Build jar
         working-directory: backend
         run: ./mvnw clean package
