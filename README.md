@@ -2,7 +2,7 @@
 
 ## Java Requirement
 
-- Runtime/JDK: Java 21
+- Runtime/JDK: Java 25
 - Build: Maven wrapper via `.\mvnw.cmd clean package`
 
 ## Start the backend
